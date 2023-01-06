@@ -1,0 +1,244 @@
+:root {
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --warm-black: #201E1C;
+    --black: #282623;
+    --grey: #BABABA;
+    --off-white: #FAF8F7;
+    --just_white: #FFFFFF;
+    --off-grey: #757575;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+body {
+    background-color: var(--warm-black);
+    background-image: url(./assets/img/flores-estampado.png);
+}
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    justify-content: center;
+}
+header img {
+    min-width: 320px;
+    height: 127px;
+    margin-top: 60px;
+    align-self: center;
+}
+.header--title-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 50px;
+    text-align: center;
+    align-self: center;
+}
+.header--title-container h1 {
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    color: var(--just_white);
+}
+.header--title-container p {
+    margin-top: 24px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--soft-orange);
+}
+.header--title-container .header--button {
+    position: absolute;
+    top: calc(100% - 24px);
+    left: calc(50% - 110px);
+    display: block;
+    text-align: center;
+    width: 220px;
+    height: 48px;
+    padding: 8px;
+    margin: auto;
+    background: var(--bitcoin-orange);
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--warm-black);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+.header--button span {
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    margin-left: 5px;
+    background-image: url("./assets/icons/down-arrow.svg");
+}
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--black);
+}
+.main-exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+.main-exchange-container--img {
+    width: 234px;
+    height: 338px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url(./assets/img/merlina.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-exchange-container--title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.main-exchange-container--title h2 {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just_white);
+}
+.main-exchange-container--title p {
+    margin-bottom: 40px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: var(--off-grey);
+}
+.main-exchange-container--table .main-table--title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-table--title .table-coins--container {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    align-items: center;
+}
+.table-coins--container .table-type-paypal {
+    justify-content: flex-start;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: #B5B0AC;
+    padding-left: 10px;
+}
+.main-table--title h3 {
+    align-self: flex-start;
+    margin-left: calc(50% - 70px);
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 5rem;
+    line-height: 2.3rem;
+    color: var(--bitcoin-orange);
+}
+.main-description-container {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: var(--warm-black);
+}
+.main-description-container--title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.main-description-merli {
+    background-color: none;
+}
+.main-exchange-alfabet--img_merli {
+    min-width: 320px;
+    min-height: 182px;
+    max-width: 480px;
+    max-height: 273px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url(./assets/img/merli.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-description-container--title h2 {
+    margin-bottom: 24px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just_white);
+}
+.main-description-container--title p {
+    margin-bottom: 32px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+.main-exchange-alfabet--img {
+    width: 320px;
+    height: 251px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url(./assets/img/alfabet.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-description-disclaimer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 288px;
+    margin-bottom: 50px;
+}
+
+.main-description-disclaimer h3 {
+    width: 217px;
+    margin-top: 20px;
+    margin-left: 16px;
+    text-align: start;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--just_white);
+}
+.main-description-disclaimer p {
+    width: 252px;
+    margin-left: 16px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: start;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #808080
+    
+}
